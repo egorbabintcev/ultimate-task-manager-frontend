@@ -9,10 +9,12 @@
     "lint:styles": "stylelint \"src/**/*.{vue,scss}\""
   },
   "dependencies": {
+    "axios": "^1.4.0",
     "element-plus": "^2.3.9",
     "pinia": "^2.1.6",
     "reset-css": "^5.0.2",
     "vue": "^3.3.4",
+    "vue-material-symbols": "^1.0.0",
     "vue-router": "^4.2.4"
   },
   "devDependencies": {

@@ -15,3 +15,9 @@ textarea {
 .el-button + .el-button {
   margin: 0 !important;
 }
+
+.material-symbols-outlined,
+.material-symbols-rounded,
+.material-symbols-sharp {
+  font-size: inherit;
+}

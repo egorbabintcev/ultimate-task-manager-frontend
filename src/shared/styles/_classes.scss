@@ -1,0 +1,83 @@
+// Flex grid system
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-row-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-col-reverse {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-self-start {
+  align-self: flex-start;
+}
+
+.align-self-end {
+  align-self: flex-end;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+$gaps: 2, 4, 6, 8, 12, 16, 18, 20, 24, 28, 32, 36, 48;
+
+@each $gap in $gaps {
+  .gap-#{$gap} {
+    gap: $gap * 1px;
+  }
+
+  .gap-v-#{$gap} {
+    row-gap: $gap * 1px;
+  }
+
+  .gap-h-#{$gap} {
+    column-gap: $gap * 1px;
+  }
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+// ----------------
