@@ -27,8 +27,11 @@
     display: grid;
     grid-template-columns: 1fr 1.5fr 1fr;
 
+    min-height: 56px;
     width: 100%;
-    height: 60px;
+    padding: 0 8px;
+
+    border-bottom: 1px solid rgba(0 0 0 / 0.08);
   }
 
   .header-section {
@@ -38,5 +41,6 @@
     width: 100%;
     height: 100%;
     overflow: hidden;
+    padding: 8px;
   }
 </style>

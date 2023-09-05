@@ -1,0 +1,1 @@
+export { default as FieldLikeLabel } from './FieldLikeLabel.vue';
