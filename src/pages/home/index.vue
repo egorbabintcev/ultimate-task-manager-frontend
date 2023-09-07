@@ -24,14 +24,22 @@
 
     <div class="home-content">
       <collapsable-filters-block>
-        <div
-        class="flex-row gap-12"
-        style="max-width: 1024px">
-          <status-filters withLabel/>
+        <div class="flex-col gap-18">
+          <div
+          class="flex-row gap-12"
+          style="max-width: 1024px">
+            <status-filters withLabel/>
 
-          <priority-filters withLabel/>
+            <priority-filters withLabel/>
 
-          <category-filters withLabel/>
+            <category-filters withLabel/>
+          </div>
+
+          <div class="flex-row gap-12">
+            <status-filters withLabel/>
+
+            <priority-filters withLabel/>
+          </div>
         </div>
       </collapsable-filters-block>
     </div>
