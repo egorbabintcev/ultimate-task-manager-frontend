@@ -2,7 +2,12 @@ import { defineStore } from 'pinia';
 import { ref } from 'vue';
 
 const useTasksStore = defineStore('tasks', () => {
-  const params = ref<Partial<Record<'labels' | 'statuses' | 'priorities', unknown>>>({});
+  const params = ref<Partial<{
+    'labels': Array<number>,
+    'statuses': unknown,
+    'priorities': unknown,
+    'assignee': number,
+  }>>({});
 
   return {
     $reset() {
