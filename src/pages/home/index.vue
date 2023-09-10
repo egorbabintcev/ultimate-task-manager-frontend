@@ -33,6 +33,8 @@
             <priority-filters withLabel/>
 
             <category-filters withLabel/>
+
+            <assignee-filters withLabel/>
           </div>
 
           <div class="flex-row gap-12">
@@ -52,7 +54,14 @@
   import { SearchAutocompleteInput } from '@/features/search-global';
   import { PageTitle, usePageTitle } from '@/features/page-title';
   import { CreateTaskButton } from '@/features/create-task';
-  import { ToggleFiltersButton, CollapsableFiltersBlock, StatusFilters, PriorityFilters, CategoryFilters } from '@/features/filter-tasks';
+  import {
+    ToggleFiltersButton,
+    CollapsableFiltersBlock,
+    StatusFilters,
+    PriorityFilters,
+    CategoryFilters,
+    AssigneeFilters,
+  } from '@/features/filter-tasks';
 
   export default defineComponent({
     name: 'HomePage',
@@ -66,6 +75,7 @@
       StatusFilters,
       PriorityFilters,
       CategoryFilters,
+      AssigneeFilters,
     },
     setup() {
       usePageTitle('Tasks');
